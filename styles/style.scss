@@ -1,0 +1,48 @@
+// Third Parts
+@import '../node_modules/swiper/swiper.scss';
+
+// Util
+@import '_reset.scss';
+@import '_variables.scss';
+@import '_functions.scss';
+@import '_mixins.scss';
+@import '_grid.scss';
+
+// Elements
+@import '_headings.scss';
+@import '_text.scss';
+
+// Blocks
+@import '_notification-bar.scss';
+@import '_header.scss';
+@import '_banner.scss';
+@import '_content.scss';
+@import '_scroll.scss';
+@import '_button.scss';
+@import '_image-gallery.scss';
+
+// Page
+
+* {
+  box-sizing: border-box;
+}
+
+// Global overrides
+html,
+body {
+  max-width: 100vw;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+body {
+  * {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
+      'Lucida Grande', sans-serif;
+  }
+}
+
+.row {
+  max-width: 100%;
+  margin: 0;
+}

@@ -1,0 +1,70 @@
+.scroll {
+	width: 100%;
+	overflow: hidden;
+
+	&__track {
+		@include flex(row, flex-start, flex-start, nowrap);
+		width: 100%;
+		overflow-x: auto;
+	}
+
+	&__item {
+		text-decoration: none;
+
+		&:visited {
+			text-decoration: none;
+		}
+
+		@media (orientation: portrait) {
+			width: calc(50vw + #{$gutter} + #{$gutter});
+			min-width: calc(50vw + #{$gutter} + #{$gutter});
+		}
+
+		@media (orientation: portrait) and (min-width: #{$md}) {
+			width: calc(100vw / 3 + #{$gutter} + #{$gutter});
+
+			min-width: calc(100vw / 3 + #{$gutter} + #{$gutter});
+		}
+
+		@media (orientation: landscape) {
+			width: calc(100vw + #{$gutter} + #{$gutter});
+			min-width: calc(100vw + #{$gutter} + #{$gutter});
+		}
+
+		@media (min-width: #{$lg}) {
+			width: calc(100vw / 3 - #{$gutter});
+			min-width: 0;
+			max-width: 100%;
+		}
+
+		img {
+			width: 100%;
+			display: block;
+		}
+
+		h1,
+		.h1,
+		h2,
+		.h2,
+		h3,
+		.h3,
+		h4,
+		.h4,
+		h5,
+		.h5,
+		h6,
+		.h6 {
+			margin: divide($gutter, 2) 0 divide($gutter, 4);
+			line-height: 1.25;
+			font-weight: 400;
+		}
+
+		p {
+			font-weight: 600;
+		}
+	}
+
+	&__item + .scroll__item {
+		margin-left: $gutter;
+	}
+}

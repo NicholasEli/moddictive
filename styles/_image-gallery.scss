@@ -1,0 +1,33 @@
+.image-gallery {
+	img {
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+
+	img + img {
+		margin-top: $gutter;
+
+		@media (min-width: #{$md}) {
+			margin-top: multiply($gutter, 2);
+		}
+	}
+
+	.col-xs-6 {
+		padding-left: 0;
+		padding-right: divide($gutter, 2);
+
+		@media (min-width: #{$md}) {
+			padding-right: $gutter;
+		}
+	}
+
+	.col-xs-6 + .col-xs-6 {
+		padding-left: divide($gutter, 2);
+		padding-right: 0;
+
+		@media (min-width: #{$md}) {
+			padding-left: $gutter;
+		}
+	}
+}

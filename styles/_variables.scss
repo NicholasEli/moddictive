@@ -1,0 +1,15 @@
+$gutter: 16px;
+$xs: 480px;
+$sm: 568px;
+$md: 768px;
+$lg: 960px;
+$xl: 1200px;
+$xxl: 1600px;
+
+$black-900: #000;
+$white-100: #fff;
+
+:root {
+  --black-900: #{$black-900};
+  --white-100: #{$white-100};
+}

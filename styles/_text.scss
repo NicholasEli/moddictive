@@ -1,0 +1,21 @@
+.text {
+	&--uppercase {
+		text-transform: uppercase;
+	}
+
+	&--lowercase {
+		text-transform: lowercase;
+	}
+
+	&--capitalize {
+		text-transform: capitalize;
+	}
+
+	&--black-900 {
+		color: $black-900;
+	}
+
+	&--white-100 {
+		color: $white-100;
+	}
+}
